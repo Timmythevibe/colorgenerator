@@ -49,3 +49,16 @@ body {
     color: white;
     border: none;
 }
+
+/* Media Query for larger screens */
+@media (min-width: 768px) {
+    .buttons {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .buttons button {
+        flex: 1;
+        margin: 10px;
+    }
+}
