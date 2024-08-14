@@ -4,6 +4,8 @@ document.addEventListener('DOMContentLoaded', function () {
     const generateBtn = document.getElementById('generate-btn');
     const copyBtn = document.getElementById('copy-btn');
     const resetBtn = document.getElementById('reset-btn');
+    const heading = document.querySelector('h1')
+    const paragraph = document.querySelector('p')
 
     // Function to generate a random color
     function getRandomColor() {
@@ -20,6 +22,8 @@ document.addEventListener('DOMContentLoaded', function () {
         const randomColor = getRandomColor();
         colorBox.style.backgroundColor = randomColor;
         colorCode.textContent = randomColor;
+        heading.style.color = randomColor;
+        paragragh.style.color = randomColor;
     });
 
     // Event listener for Copy button
@@ -37,5 +41,7 @@ document.addEventListener('DOMContentLoaded', function () {
     resetBtn.addEventListener('click', function () {
         colorBox.style.backgroundColor = '#FFFFFF';
         colorCode.textContent = '#FFFFFF';
+        heading.style.color = '#000000';
+        paragraph.style.color = '#000000';
     });
 });

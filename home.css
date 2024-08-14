@@ -6,22 +6,33 @@ body {
     height: 100vh;
     margin: 0;
     background-color: #f0f0f0;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 .container {
     text-align: center;
+    max-width: 90%;
+    width: 400px;
+    margin: 0 auto;
+}
+
+hi, p {
+    transition: color 0.3s ease;
 }
 
 #color-box {
-    width: 200px;
-    height: 200px;
+    width: 100%;
+    height: 0;
+    padding-bottom: 100%;
     margin: 20px auto;
     background-color: #FFFFFF;
     border: 2px solid #000;
+    box-sizing: border-box;
 }
 
 #color-code {
-    font-size: 20px;
+    font-size: 1.5em;
     margin: 10px 0;
 }
 
@@ -32,22 +43,24 @@ body {
     cursor: pointer;
 }
 
+.buttons {
+    display: flex;
+    flex-direction: column;
+}
+
 #generate-btn {
     background-color: #4CAF50;
     color: white;
-    border: none;
 }
 
 #copy-btn {
     background-color: #2196F3;
     color: white;
-    border: none;
 }
 
 #reset-btn {
     background-color: #f44336;
     color: white;
-    border: none;
 }
 
 /* Media Query for larger screens */
